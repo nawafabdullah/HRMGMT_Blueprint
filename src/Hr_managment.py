@@ -38,8 +38,8 @@ def main():
             vactionRequest_status = HRVacationsModule.processVacationRequest(HRInitialaizationModule.ExtractIntegers("enter an employee ID "),
                                                                             HRInitialaizationModule.ExtractIntegers("enter the number of days of the vacation"))
             while (vactionRequest_status == -1):
-                vactionRequest_status = HRVacationsModule.processVacationRequest(int(input("enter an employee ID ")),
-                                                                                (int(input("enter the number of days of the vacation "))))
+                vactionRequest_status = HRVacationsModule.processVacationRequest(HRInitialaizationModule.ExtractIntegers("enter an employee ID "),
+                                                                            HRInitialaizationModule.ExtractIntegers("enter the number of days of the vacation"))
 
         elif (userInput == 4):
             print("Not implemented yet")
